@@ -1,8 +1,6 @@
 var es = require('event-stream'),
-    gutil = require('gulp-util'),
     juice = require('juice').juiceResources,
-    File = gutil.File,
-    PluginError = gutil.PluginError,
+    PluginError = require('plugin-error'),
     crypto = require('crypto');
 
 module.exports = function(options){
